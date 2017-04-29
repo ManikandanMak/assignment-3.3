@@ -1,0 +1,30 @@
+Components of Hadoop 2.X :
+                         There are 3 major components of Hadoop 2.X
+                         > HDFS
+                         > YARN
+                         > MapReduce
+
+HDFS :
+      Hadoop 2.x is featured with Name Node HA which is referred as HDFS High Availability (HA).
+      It has some new Java APIs and features in HDFS and MapReduce which are known as HDFS2 and MR2 respectively
+      New architecture has added the architectural features like HDFS High Availability and HDFS Federation
+      Hadoop 2.x not using Job Tracker and Task Tracker daemons for resource management now on-wards, it is using YARN (Yet Another Resource Negotiator) for Resource Management
+
+YARN :
+      The fundamental idea of YARN is to split up the functionalities of resource management and job scheduling/monitoring into separate daemons.
+      The idea is to have a global ResourceManager (RM) and per-application ApplicationMaster (AM).
+      An application is either a single job or a DAG of jobs
+      The Scheduler is responsible for allocating resources to the various running applications subject to familiar constraints of capacities, queues etc.
+      The ApplicationsManager is responsible for accepting job-submissions, negotiating the first container for executing the application specific ApplicationMaster and provides the service for restarting the ApplicationMaster container on failure
+      
+MapReduce : 
+           MapReduce in hadoop-2.x maintains API compatibility with previous stable release (hadoop-1.x).
+           This means that all MapReduce jobs should still run unchanged on top of YARN with just a recompile.
+           This mapreduce provides a reasonable amount of detail on every user-facing aspect of the MapReduce framework.
+           It helps users implement, configure and tune their jobs in a fine-grained manner.
+           Applications typically implement them to provide the map and reduce methods.
+ 
+           
+           
+      
+      
